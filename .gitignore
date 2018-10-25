@@ -5,6 +5,12 @@ __pycache__/
 local_settings.py
 db.sqlite3
 /media
-venv
 /static
 .vscode
+venv
+bin
+lib
+lib64
+share
+pyvenv.cfg
+/postgres

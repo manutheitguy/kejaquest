@@ -25,7 +25,7 @@ SECRET_KEY = 'ubsq#xai!qa_!dsi=61a&mbqn)lxtl*x48$fi0v-l^k%0z1^bn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -81,11 +81,12 @@ WSGI_APPLICATION = 'btre.wsgi.application'
 
 DATABASES = {
     'default': {
+
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'btredb',
+        'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': '123456',
-        'HOST': 'localhost'
+        'HOST': 'db',
+        'PORT': 5432
     }
 }
 
