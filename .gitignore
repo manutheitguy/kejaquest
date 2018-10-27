@@ -13,4 +13,4 @@ lib
 lib64
 share
 pyvenv.cfg
-/postgres
+postgres
