@@ -25,8 +25,8 @@
                 </div>
 
                 <div class="col-md-4 mb-3">
-                  <label class="sr-only">City</label>
-                  <input type="text" name="city" class="form-control" placeholder="City">
+                  <label class="sr-only">Location</label>
+                  <input type="text" name="location" class="form-control" placeholder="Location">
                 </div>
 
                 <div class="col-md-4 mb-3">
@@ -41,15 +41,16 @@
               </div>
               <!-- Form Row 2 -->
               <div class="form-row">
-                <div class="col-md-6 mb-3">
-                  <label class="sr-only">Bedrooms</label>
-                  <select name="bedrooms" class="form-control">
-                    <option selected="true" disabled="disabled">Bedrooms (All)</option>
-                    {% for key,value in bedroom_choices.items %}
-                      <option value="{{ key }}">{{ value }}</option>
-                    {% endfor %}
-                  </select>
-                </div>
+                  <div class="col-md-6 mb-3">
+                      <label class="sr-only">Bedrooms</label>
+                      <select name="bedrooms" class="form-control">
+                        <option selected="true" disabled="disabled">Bedrooms (All)</option>
+                        {% for key,value in bedroom_choices.items %}
+                          <option value="{{ key }}">{{ value }}</option>
+                        {% endfor %}
+                      </select>
+                    </div>
+                
                 <div class="col-md-6 mb-3">
                   <select name="price" class="form-control" id="type">
                     <option selected="true" disabled="disabled">Max Price (Any)</option>
